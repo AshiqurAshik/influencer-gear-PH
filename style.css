@@ -357,3 +357,78 @@ nav li a:hover{
   margin: 100px 80px;
 }
 }
+
+/* feature section */
+
+.feature-sec{
+  margin:100px 165px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius:5px ;
+  gap: 50px;
+}
+
+.feature-txt{
+  width: 60%;
+}
+
+.feature-txt h1{
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.feature-txt p{
+  color: #6C6C6C;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+/* Responsive Feature  */
+
+@media screen and (max-width: 576px){
+  
+.feature-sec{
+  flex-direction: column;
+  margin:30px ;
+}
+
+.feature-img {
+  width: 100%;
+}
+.feature-img img{
+  width: 100%;
+}
+
+.feature-txt,
+ .feature-txt h1, 
+ .feature-txt p{
+width: 100%;
+  text-align: center;
+}
+
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+
+  .feature-sec{
+  flex-direction: column;
+  margin:100px ;
+}
+
+.feature-img {
+  width: 100%;
+}
+.feature-img img{
+  width: 100%;
+}
+
+.feature-txt,
+ .feature-txt h1, 
+ .feature-txt p{
+width: 100%;
+  text-align: center;
+}
+}
