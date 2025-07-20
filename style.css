@@ -28,6 +28,14 @@ body {
   background-color: #c0255f;  
 }
 
+.inter-font{
+      font-family: 'Inter', sans-serif;
+}
+
+.hide{
+  display: none;
+}
+
 /* header */
 header{
   min-height: 100vh;
@@ -220,4 +228,132 @@ nav li a:hover{
     row-gap: 30px;
     column-gap: 20px;
   }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+
+  .sponser-sec{
+  margin: 0px 100px;
+}
+
+  .all-sponser{
+    grid-template-columns: repeat(4,1fr);
+    padding: 30px 40px;
+    row-gap: 30px;
+    column-gap: 20px;
+  }
+
+}
+
+/* Collection section */
+
+.collection-sec{
+  margin: 100px 200px;
+
+}
+
+.collection-sec h2{
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.all-product{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+
+.product{
+  background-color: white;
+  border-radius: 5px;
+  padding: 17px 15px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15) ;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product img{
+  border-radius: 5px;
+
+}
+
+.product h3{
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.product h4{
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.product p{
+  font-size: 14px;
+  color:#787885 ;
+}
+
+.star-icon{
+  display: flex;
+  align-items: center;
+}
+
+.star-icon h4{
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+.star-icon i{
+    color: #FFD700;
+}
+
+.see-more{
+  color: rgba(224, 44, 109, 0.87) ;
+  display: flex;
+  gap: 5px;
+  justify-content: end;
+  margin-top: 30px;
+  margin-right: 50px;
+  font-size: 1.2rem;
+}
+
+/* Responsive collection */
+
+@media screen and (max-width: 576px){
+  .collection-sec{
+  margin: 30px 10px;
+}
+
+.all-product{
+  grid-template-columns: repeat(1,1fr);
+}
+
+.see-more{
+  justify-content: center;
+}
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+  .collection-sec{
+  margin: 0px 80px;
+  margin: 0 auto;
+  margin-top: -300px;
+  margin-bottom: 100px;
+}
+
+.all-product{
+  grid-template-columns: repeat(2,1fr);
+
+}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1400px)
+{
+  .collection-sec{
+  margin: 100px 80px;
+}
 }
