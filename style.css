@@ -169,3 +169,55 @@ nav li a:hover{
   }
 
 }
+
+@media screen and (min-width: 576px) and (max-width: 992px)
+{
+
+  .banner-sec{
+    margin: 80px 100px;
+  }
+
+    .banner-txt{
+    width: 80%;
+  }
+
+    .banner-txt h1{
+    font-size: 2rem;
+  }
+
+  .banner-txt p{
+    font-size: 1 rem;
+    width: 80%;
+  }
+}
+
+/* Sponser section */
+
+.sponser-sec{
+  margin: 70px 165px;
+  border-top: 1px solid #C0CCDA ;
+  border-bottom: 1px solid #C0CCDA ;
+}
+
+.all-sponser{
+  padding: 30px 60px;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  align-items: center;
+}
+
+/* Responsive sponser */
+
+@media screen and (max-width: 576px){
+ 
+  .sponser-sec{
+  margin: 40px 20px;
+}
+
+  .all-sponser{
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px 10px;
+    row-gap: 30px;
+    column-gap: 20px;
+  }
+}
